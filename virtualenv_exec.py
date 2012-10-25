@@ -21,4 +21,4 @@ class VirtualenvExecCommand(sublime_plugin.WindowCommand):
         kwargs["working_dir"] = working_dir
         kwargs["path"] = path
 
-        return self.window.run_command("exec", **kwargs)
+        return self.window.run_command("exec", kwargs)
